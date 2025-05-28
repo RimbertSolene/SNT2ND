@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python - Cours 6.1 : Listes et Tableaux</title>
+    <style>
+        body {
+            background-color: #f0f8ff; /* Bleu clair */
+            color: #333;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .code {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Python - Cours 6.1 : Listes et Tableaux</h1>
+
+    <div class="container">
+        <div class="section">
+            <h2>Exercice 1</h2>
+            <p>Créer une liste contenant des valeurs et afficher :</p>
+            <div class="code">
+                liste1 = [2, 7, 90, 10, 50, 1]<br>
+                print(liste1) # Affiche toute la liste<br>
+                print(liste1[0]) # Affiche le premier élément<br>
+                print(liste1[1]) # Affiche le deuxième élément<br>
+                print(liste1[-1]) # Affiche le dernier élément<br>
+                print(len(liste1)) # Affiche la longueur de la liste
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Exercice 2</h2>
+            <p>Définir la fonction `min(liste)` pour trouver le plus petit élément :</p>
+            <div class="code">
+                liste1 = [2, 7, 90, 10, 50, 1]<br><br>
+                def max(liste):<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;max_value = liste[0]<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;for i in liste:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if i > max_value:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;max_value = i<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;return max_value<br><br>
+
+                def min(liste):<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;min_value = liste[0]<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;for i in liste:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if i < min_value:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;min_value = i<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;return min_value<br><br>
+
+                print("Le plus grand est :", max(liste1))<br>
+                print("Le plus petit est :", min(liste1))
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Exercice 3</h2>
+            <p>Définir la fonction `trouve(liste, nb)` qui cherche une valeur :</p>
+            <div class="code">
+                def trouve(liste, nb):<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;return nb in liste<br><br>
+
+                liste1 = [2, 7, 90, 10, 50, 1]<br>
+                print(trouve(liste1, 7)) # Affiche True<br>
+                print(trouve(liste1, 99)) # Affiche False
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

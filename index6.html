@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python - Cours 6 : Listes et Tableaux</title>
+    <style>
+        body {
+            background-color: #f0f8ff; /* Bleu clair */
+            color: #333;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .code {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Python - Cours 6 : Listes et Tableaux</h1>
+
+    <div class="container">
+        <div class="section">
+            <h2>Introduction</h2>
+            <p>Une liste est une structure de données qui contient une série de valeurs.</p>
+            <p>Exemple :</p>
+            <div class="code">
+                tab = [2, 3, 7, 10, 22]
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Accéder aux éléments d’une liste</h2>
+            <p>On peut appeler les éléments d'une liste par leur position (indice ou index) :</p>
+            <div class="code">
+                print(tab[0]) # affiche 2<br>
+                print(tab[3]) # affiche 10
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Obtenir la taille d'une liste</h2>
+            <div class="code">
+                print(len(tab)) # affiche 5
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Listes avec différents types de valeurs</h2>
+            <p>Une liste peut contenir des valeurs de types différents :</p>
+            <div class="code">
+                mixte = ["girafe", 5, "souris", 0.15]
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Concaténation et répétition</h2>
+            <p>Les listes supportent l'opérateur <strong>+</strong> pour la concaténation et <strong>*</strong> pour la répétition :</p>
+            <div class="code">
+                ani1 = ["girafe", "tigre"]<br>
+                ani2 = ["singe", "souris"]<br>
+                print(ani1 + ani2) # affiche ['girafe', 'tigre', 'singe', 'souris']<br>
+                print(ani1 * 3) # affiche ['girafe', 'tigre', 'girafe', 'tigre', 'girafe', 'tigre']
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Création et modification d’une liste</h2>
+            <p>Création d’une liste vide et ajout d’éléments :</p>
+            <div class="code">
+                a = []<br>
+                a = a + [15]<br>
+                print(a) # affiche [15]<br>
+                a.append(13)<br>
+                print(a) # affiche [15, 13]
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
